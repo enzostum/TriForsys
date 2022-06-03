@@ -16,15 +16,15 @@ a:hover {
     color: rgb(113, 230, 240);
 }
 body {
-    background-color: white;
+    background-color: #1e375f;
+   
 }
 nav {
     display: flex;
     align-items: center;
-    border: white solid 1px;
+    
     height: 60px;
     background-color: rgba(12, 12, 12, 0.658);
-    position: fixed;
     width: 100%;
 }
 
@@ -42,7 +42,7 @@ nav {
 
 .logo img { 
     width: 81px;
-    height: 54px;
+    height: 63px;
 }
 button {
     padding: 10px;
@@ -55,6 +55,24 @@ button:hover {
     color: black;
     border: none;
     border-radius: 5px;
+}
+.carrosel { 
+    box-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    height: 500px;
+    width: 800px;
+    align-items: stretch;
+    
+}
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform:translateX(0);
+}
+.container img { 
+    object-fit: cover;
+    height: 500px;
+    width: 800px;
 }
 .capa-principal img {
     width: 100%;
